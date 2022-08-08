@@ -1,4 +1,4 @@
-$colour-primary: #FEFFFF;
+$colour-primary: #f6f8fc;
 $colour-secondary: #A1CEFF;
 $colour-tertiary: #252525;
 
@@ -37,12 +37,34 @@ header {
       }
     }
   }
+
+  section {
+    display: flex;
+    align-items: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 300px;
+      h2{
+        font-size: 25px;
+        opacity: 75%;
+      }
+      h3 {
+        font-size: 35px;
+      }
+    }
+    img {
+      margin: 20px;
+    }
+  }
 }
 
 .logo {
   padding: 5px;
   margin: 10px;
   border-radius: 10px;
+  font-size: 40px;
 }
 
 .button {
@@ -52,9 +74,14 @@ header {
   border: $colour-tertiary solid 1px;
   border-radius: 8px;
   margin: 5px;
+  font-weight: bold;
   &:hover {
     background-color: $colour-primary;
     color: $colour-tertiary;
     transition: 0.3s ease;
   }
+}
+
+.underline {
+  text-decoration: underline $colour-secondary solid 10px;
 }
