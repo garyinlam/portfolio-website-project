@@ -113,3 +113,29 @@ main > * {
   display: flex;
   justify-content: space-evenly;
 }
+
+.card-holder {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-card {
+  text-align: left;
+  h5 {
+    font-size: 18px;
+  }
+  p {
+    opacity: 90%;
+  }
+}
+
+.subtitle {
+  opacity: 75%;
+  font-size: 15px;
+}
+
+.project-links {
+  font-size: 14px;
+  margin: 5px;
+}
