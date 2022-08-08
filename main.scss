@@ -83,5 +83,33 @@ header {
 }
 
 .underline {
-  text-decoration: underline $colour-secondary solid 10px;
+  text-decoration: underline $colour-secondary solid 25%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  section > *{
+    margin: 5px;
+  }
+}
+
+main > * {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.section-title {
+  @extend .underline;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
 }
