@@ -1,0 +1,60 @@
+$colour-primary: #FEFFFF;
+$colour-secondary: #A1CEFF;
+$colour-tertiary: #252525;
+
+$font-body: "Segoe UI",Arial,sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  color: $colour-tertiary;
+  background-color: $colour-primary;
+  font-family: $font-body;
+}
+
+a:link,
+a:visited{
+  text-decoration: none;
+
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      li {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.logo {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.button {
+  background-color: $colour-tertiary;
+  color: $colour-primary;
+  padding: 8px;
+  border: $colour-tertiary solid 1px;
+  border-radius: 8px;
+  margin: 5px;
+  &:hover {
+    background-color: $colour-primary;
+    color: $colour-tertiary;
+    transition: 0.3s ease;
+  }
+}
