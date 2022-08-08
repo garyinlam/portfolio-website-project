@@ -139,3 +139,23 @@ main > * {
   font-size: 14px;
   margin: 5px;
 }
+
+#about{
+  background-color: $colour-secondary;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  div > * {
+    background-color: $colour-secondary;
+  }
+  div {
+    text-align: left;
+  }
+}
+
+#about > *{
+  background-color: $colour-secondary;
+  margin: 50px;
+}
