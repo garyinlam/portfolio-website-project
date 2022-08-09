@@ -106,7 +106,7 @@ main > * {
 .section-title {
   @extend .underline;
   font-size: 20px;
-  margin-bottom: 5px;
+  margin: 70px 0 20px 0;
 }
 
 .images {
@@ -132,14 +132,15 @@ main > * {
 
 .card-holder {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: minmax(100px, auto);
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .project-card {
   text-align: left;
+  padding: 0 10px 0 10px;
   h5 {
     font-size: 18px;
   }
@@ -180,7 +181,6 @@ main > * {
 }
 
 #about > *{
-  background-color: $colour-secondary;
   margin: 50px;
 }
 
@@ -225,4 +225,61 @@ footer > * {
 
 img {
   object-fit: cover;
+}
+
+.mobile{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  header {
+    section {
+      margin: 100px 10px 100px 10px;
+      div > *{
+        margin: 50px 0 50px 0;
+      }
+    }
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .card-holder{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #about {
+    background-color: $colour-primary;
+    flex-direction: column-reverse;
+    div > * {
+      background-color: $colour-primary;
+    }
+    div{
+      width: 80%;
+    }
+    img {
+      border-radius: 0;
+    }
+  }
+
+  .web {
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    p {
+      visibility: hidden;
+    }
+  }
 }
