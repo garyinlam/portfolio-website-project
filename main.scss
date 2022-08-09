@@ -114,12 +114,28 @@ main > * {
   justify-content: space-evenly;
 }
 
+
+.skill{
+  margin: 10px;
+  svg {
+    width: auto; 
+    height: 75px;
+    margin: 5px;
+    path {
+      fill: $colour-secondary;
+    }
+  }
+  p {
+    margin:15px;
+  }
+}
+
 .card-holder {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(100px, auto);
-  gap: 10px;
+  gap: 30px;
 }
 
 .project-card {
