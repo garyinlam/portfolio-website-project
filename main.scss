@@ -116,8 +116,10 @@ main > * {
 
 .card-holder {
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px;
 }
 
 .project-card {
@@ -147,6 +149,7 @@ main > * {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 0;
   div > * {
     background-color: $colour-secondary;
   }
@@ -158,4 +161,43 @@ main > * {
 #about > *{
   background-color: $colour-secondary;
   margin: 50px;
+}
+
+footer {
+  display: flex;
+  background-color: $colour-tertiary;
+  justify-content: space-between;
+  address{
+    a{
+      background-color: $colour-tertiary;
+      color: $colour-primary;
+    }
+  }
+  align-items: center;
+  padding: 50px;
+}
+
+footer > * {
+  background-color: $colour-tertiary;
+  color: $colour-primary;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  svg path{
+    fill:$colour-tertiary;
+  }
+  font-weight: bold;
+  font-size: 17px;
+  margin:5px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
