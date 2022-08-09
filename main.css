@@ -162,6 +162,7 @@ main > * {
 }
 #about div {
   text-align: left;
+  width: 30%;
 }
 #about img {
   border-radius: 50%;
