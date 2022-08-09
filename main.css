@@ -163,6 +163,9 @@ main > * {
 #about div {
   text-align: left;
 }
+#about img {
+  border-radius: 50%;
+}
 
 #about > * {
   background-color: #A1CEFF;
@@ -204,4 +207,8 @@ footer > * {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+img {
+  object-fit: cover;
 }
