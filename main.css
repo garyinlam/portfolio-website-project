@@ -11,6 +11,81 @@ a:visited {
   text-decoration: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+main section > * {
+  margin: 5px;
+}
+
+main > * {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+img {
+  object-fit: cover;
+}
+
+[class$="--mobile"],
+[class*="--mobile "] {
+  display: none;
+}
+
+.logo {
+  padding: 5px;
+  margin: 10px 10px 10px 30px;
+  border-radius: 10px;
+  font-size: 40px;
+  text-align: right;
+}
+
+[class$="--button"],
+[class*="--button "] {
+  background-color: #252525;
+  color: #f6f8fc;
+  padding: 8px;
+  border: #252525 solid 1px;
+  border-radius: 8px;
+  margin: 5px;
+  font-weight: bold;
+}
+[class$="--button"]:hover,
+[class*="--button "]:hover {
+  background-color: #f6f8fc;
+  color: #252525;
+  transition: 0.3s ease;
+}
+
+[class$="--underline"],
+[class*="--underline "] {
+  text-decoration: underline #A1CEFF solid 25%;
+}
+
+.section-title {
+  font-size: 20px;
+  margin: 70px 0 20px 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 5px;
+}
+.icon__svg path {
+  fill: #252525;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -51,57 +126,6 @@ a:visited {
 }
 .header .splash__image {
   margin: 20px;
-}
-
-.logo {
-  padding: 5px;
-  margin: 10px 10px 10px 30px;
-  border-radius: 10px;
-  font-size: 40px;
-}
-
-[class$="--button"],
-[class*="--button "] {
-  background-color: #252525;
-  color: #f6f8fc;
-  padding: 8px;
-  border: #252525 solid 1px;
-  border-radius: 8px;
-  margin: 5px;
-  font-weight: bold;
-}
-[class$="--button"]:hover,
-[class*="--button "]:hover {
-  background-color: #f6f8fc;
-  color: #252525;
-  transition: 0.3s ease;
-}
-
-[class$="--underline"],
-[class*="--underline "] {
-  text-decoration: underline #A1CEFF solid 25%;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-}
-main section > * {
-  margin: 5px;
-}
-
-main > * {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-
-.section-title {
-  font-size: 20px;
-  margin: 70px 0 20px 0;
 }
 
 .tech-skills__skills-container {
@@ -196,29 +220,6 @@ main > * {
 .footer > * {
   background-color: #252525;
   color: #f6f8fc;
-}
-
-.icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  padding: 10px;
-  border-radius: 50%;
-  font-weight: bold;
-  font-size: 17px;
-  margin: 5px;
-}
-.icon__svg path {
-  fill: #252525;
-}
-
-img {
-  object-fit: cover;
-}
-
-[class$="--mobile"],
-[class*="--mobile "] {
-  display: none;
 }
 
 @media screen and (max-width: 768px) {

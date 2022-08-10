@@ -1,0 +1,22 @@
+@use "./variables" as v;
+.tech-skills {
+  &__skills-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.skill{
+  margin: 10px;
+  &__svg {
+    width: auto; 
+    height: 75px;
+    margin: 5px;
+    path {
+      fill: v.$colour-secondary;
+    }
+  }
+  &__text {
+    margin:15px;
+  }
+}

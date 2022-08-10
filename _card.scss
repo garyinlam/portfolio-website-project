@@ -1,0 +1,30 @@
+.card-holder {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  text-align: left;
+  padding: 0 10px 0 10px;
+  max-width: 320px;
+  &__title {
+    font-size: 18px;
+  }
+
+  &__category{
+    opacity: 75%;
+    font-size: 15px;
+  }
+
+  &__body {
+    opacity: 90%;
+  }
+
+  &__links {
+    font-size: 14px;
+    margin: 5px;
+  }
+}

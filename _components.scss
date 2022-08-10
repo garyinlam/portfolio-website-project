@@ -1,0 +1,48 @@
+@use "./variables" as v;
+.logo {
+  padding: 5px;
+  margin: 10px 10px 10px 30px;
+  border-radius: 10px;
+  font-size: 40px;
+  text-align: right;
+}
+
+[class$="--button"],
+[class*="--button "] {
+  background-color: v.$colour-tertiary;
+  color: v.$colour-primary;
+  padding: 8px;
+  border: v.$colour-tertiary solid 1px;
+  border-radius: 8px;
+  margin: 5px;
+  font-weight: bold;
+  &:hover {
+    background-color: v.$colour-primary;
+    color: v.$colour-tertiary;
+    transition: 0.3s ease;
+  }
+}
+
+[class$="--underline"],
+[class*="--underline "] {
+  text-decoration: underline v.$colour-secondary solid 25%;
+}
+
+.section-title {
+  font-size: 20px;
+  margin: 70px 0 20px 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  &__svg path{
+    fill: v.$colour-tertiary;
+  }
+  font-weight: bold;
+  font-size: 17px;
+  margin:5px;
+}

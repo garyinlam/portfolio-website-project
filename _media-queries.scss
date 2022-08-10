@@ -1,0 +1,66 @@
+@use "./variables" as v;
+@media screen and (max-width: 768px) {
+
+  
+  .nav-bar {
+    height: 150px;
+    &__link-list {
+      margin-right: 30px;
+      flex-direction: column;
+    }
+    &__link--button {
+      display: none;
+    }
+  }
+  .splash {
+    margin: 100px 10px 100px 10px;
+    div > *{
+      margin: 50px 0 50px 0;
+    }
+  }
+
+  .tech-skills {
+    &__skills-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: minmax(100px, auto);
+    }
+  }
+
+  .card-holder{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .about {
+    background-color: v.$colour-primary;
+    flex-direction: column-reverse;
+    &__text-container > * {
+      background-color: v.$colour-primary;
+    }
+    &__text-container{
+      width: 80%;
+    }
+    &__image {
+      border-radius: 0;
+    }
+  }
+
+  [class$="--web"],
+  [class*="--web "]  {
+    display: none;
+  }
+
+  [class$="--mobile"],
+  [class*="--mobile "] {
+    display: block;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    &__rights {
+      visibility: hidden;
+    }
+  }
+}
