@@ -8,84 +8,84 @@
 </head>
 <body>
 
-  <header id="top">
+  <header id="top" class="header">
 
     <!-- Nav bar -->
-    <nav>
-      <h1 class="logo"><a href="#">Gar-Yin Lam</a></h1>
-      <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#links" class="button">Get in touch</a></li>
+    <nav class="nav-bar">
+      <h1 class="nav-bar__logo logo"><a href="#">Gar-Yin <br>Lam</a></h1>
+      <ul class="nav-bar__link-list">
+        <li><a href="#top" class="nav-bar__link">Home</a></li>
+        <li><a href="#about" class="nav-bar__link">About</a></li>
+        <li><a href="#projects" class="nav-bar__link">Projects</a></li>
+        <li><a href="#links" class="nav-bar__link nav-bar__link--button">Get in touch</a></li>
       </ul>
     </nav>
 
     <!-- Landing screen -->
-    <section>
-      <div>
-        <h2>I'm Gar-Yin Lam</h2>
-        <h3>A <span class="underline">Junior Software Developer</span> based in London</h3>
-        <a href="#projects" class="button">My work &#8659</a>
+    <section class="splash">
+      <div class="splash__text-container">
+        <h2 class="splash__title">I'm Gar-Yin Lam</h2>
+        <h3 class="splash__subtitle">A <span class="splash__subtitle--underline">Junior Software Developer</span> based in London</h3>
+        <a href="#projects" class="splash__link--button">My work &#8659</a>
       </div>
-      <img src="./images/download20220703154308.png" alt="" style="width: 300px; height: 400px;" class="web">
+      <img src="./images/download20220703154308.png" alt="" style="width: 300px; height: 400px;" class="splash__image splash__image--web">
     </section>
   </header>
 
   <main>
 
     <!-- Technical skills -->
-    <section>
-      <h4 class="section-title">Technical Skills</h4>
-      <p>Technologies I have experience in</p>
-      <div class="images">
+    <section class="tech-skills">
+      <h4 class="tech-skills__title--underline section-title">Technical Skills</h4>
+      <p class="tech-skill__subtitle">Technologies I have experience in</p>
+      <div class="tech-skills__skills-container">
         <!-- put images for skills here -->
-        <div class="skill">
-          <svg width="54" height="72" viewBox="0 0 54 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="tech-skills__skill skill">
+          <svg width="54" height="72" viewBox="0 0 54 72" fill="none" xmlns="http://www.w3.org/2000/svg" class="skill__svg">
             <path d="M17.5568 55.6763C17.5568 55.6763 14.8028 57.2805 19.5121 57.8183C25.2181 58.4753 28.1363 58.383 34.4183 57.186C34.4183 57.186 36.0676 58.23 38.3783 59.1323C24.2821 65.169 6.48008 58.77 17.5546 55.6763H17.5568ZM15.8311 47.8013C15.8311 47.8013 12.7373 50.085 17.4488 50.5643C23.5576 51.1965 28.3591 51.2573 36.6908 49.653C36.6908 49.653 37.8406 50.814 39.6586 51.4553C22.6193 56.4345 3.63383 51.8423 15.8333 47.8013H15.8311ZM30.3503 34.4318C33.8176 38.4278 29.4346 42.0255 29.4346 42.0255C29.4346 42.0255 38.2478 37.4648 34.2046 31.7723C30.4223 26.451 27.5153 23.8163 43.2158 14.7083C43.2158 14.7083 18.5716 20.862 30.3481 34.434L30.3503 34.4318ZM48.9848 61.5128C48.9848 61.5128 51.0256 63.1868 46.7461 64.4895C38.6123 66.9488 12.8903 67.6868 5.74208 64.5818C3.17708 63.468 7.99208 61.911 9.50408 61.5938C11.0858 61.2428 11.9881 61.3148 11.9881 61.3148C9.12833 59.2988 -6.47992 65.2635 4.05683 66.9735C32.8028 71.6378 56.4481 64.8765 48.9848 61.5128ZM18.8798 39.6338C18.8798 39.6338 5.79158 42.7388 14.2381 43.8638C17.8133 44.343 24.9278 44.2395 31.5608 43.677C36.9721 43.218 42.4126 42.246 42.4126 42.246C42.4126 42.246 40.5023 43.065 39.1186 44.0168C25.8278 47.5088 0.155329 45.8798 7.54883 42.3068C13.7948 39.294 18.8798 39.6338 18.8798 39.6338ZM42.3518 52.758C55.8518 45.7268 49.6058 38.988 45.2588 39.9038C44.1901 40.113 43.7108 40.3155 43.7108 40.3155C43.7108 40.3155 44.0978 39.6923 44.8606 39.4245C53.4848 36.3893 60.1178 48.3638 42.0818 53.1113C42.0818 53.1 42.2956 52.9245 42.3518 52.7603V52.758ZM34.2068 0C34.2068 0 41.6858 7.47675 27.1058 18.9833C15.4238 28.2173 24.4441 33.48 27.1058 39.492C20.2861 33.3383 15.2821 27.927 18.6346 22.887C23.5666 15.4688 37.2196 11.8823 34.2068 0ZM20.2028 71.7773C33.1651 72.5963 53.0731 71.3093 53.5568 65.1803C53.5568 65.1803 52.6411 67.5 42.8311 69.3495C31.7701 71.4353 18.1171 71.1878 10.0193 69.8535C10.0193 69.8535 11.6843 71.2238 20.2006 71.7773H20.2028Z" fill="#A3E1DE"/>
           </svg>
-          <p>Java</p>
+          <p class="skill__text">Java</p>
         </div>
 
-        <div class="skill">
-          <svg width="67" height="69" viewBox="0 0 67 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="tech-skills__skill skill">
+          <svg width="67" height="69" viewBox="0 0 67 69" fill="none" xmlns="http://www.w3.org/2000/svg" class="skill__svg">
             <path d="M65.7364 31.4997L36.4912 2.08329C35.6816 1.26989 34.584 0.812988 33.4396 0.812988C32.2951 0.812988 31.1975 1.26989 30.3879 2.08329L24.3071 8.19366L32.0121 15.9418C36.059 14.5672 39.8905 18.4638 38.5012 22.5108L45.928 29.9792C51.0472 28.2046 55.0777 34.6413 51.2327 38.5049C47.271 42.4887 40.7325 38.0733 42.8577 32.8893L35.9259 25.9277V44.2528C39.7096 46.1387 39.2549 50.5467 37.2838 52.5243C36.3208 53.4922 35.015 54.0359 33.6534 54.0359C32.2919 54.0359 30.986 53.4922 30.023 52.5243C27.3953 49.8774 28.3674 45.4695 31.7055 44.1024V25.6044C28.5948 24.3246 28.0265 20.9814 28.9178 18.8368L21.322 11.1894L1.26385 31.3628C0.45461 32.1768 0 33.2806 0 34.4316C0 35.5825 0.45461 36.6863 1.26385 37.5003L30.518 66.9167C31.3274 67.73 32.4247 68.1868 33.5689 68.1868C34.7131 68.1868 35.8105 67.73 36.6198 66.9167L65.7364 37.6371C66.5456 36.8232 67.0003 35.7194 67.0003 34.5684C67.0003 33.4174 66.5456 32.3136 65.7364 31.4997Z" fill="#A3E1DE"/>
           </svg>            
-          <p>GIT</p>
+          <p class="skill__text">GIT</p>
         </div>
 
-        <div class="skill">
-          <svg width="61" height="67" viewBox="0 0 61 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="tech-skills__skill skill">
+          <svg width="61" height="67" viewBox="0 0 61 67" fill="none" xmlns="http://www.w3.org/2000/svg" class="skill__svg">
             <path d="M0.961426 0L6.33818 60.3L30.4666 67L54.6577 60.2916L60.0429 0H0.965613H0.961426ZM48.3388 19.7231H20.0397L20.7139 27.2983H47.6688L45.6379 50.0029L30.4666 54.2072L15.3162 50.0029L14.2819 38.3868H21.7063L22.2339 44.2912L30.4707 46.5106L30.4875 46.5064L38.7285 44.2828L39.5827 34.6934H13.951L11.9578 12.328H49.0046L48.343 19.7231H48.3388Z" fill="#A3E1DE"/>
           </svg>
-          <p>HTML5</p>
+          <p class="skill__text">HTML5</p>
         </div>
 
-        <div class="skill">
-          <svg width="58" height="67" viewBox="0 0 58 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="tech-skills__skill skill">
+          <svg width="58" height="67" viewBox="0 0 58 67" fill="none" xmlns="http://www.w3.org/2000/svg" class="skill__svg">
             <path d="M53.487 59.8059L58.7706 0H0L0.0690476 0.776083L5.27524 59.8143L5.31943 60.3056L29.163 67H29.5386L53.4373 60.3L53.4815 59.8087L53.487 59.8059ZM29.4364 13.0622H46.5132L45.9995 19.0922L29.1519 26.6632L29.4336 28.0255H45.2428L43.4227 49.1054L29.3756 53.0417L15.3341 49.111L14.4503 39.0163H20.231L20.695 44.1335L20.7391 44.6304L29.2596 46.9195H29.627L38.0535 44.5522L38.095 44.0581L38.8904 34.6055L38.9539 33.835H13.967L13.4422 27.7687L30.867 20.2284L30.5909 18.8605H12.6937L12.1828 13.0538H29.417L29.4364 13.0622Z" fill="#A3E1DE"/>
           </svg>
-          <p>CSS3</p>
+          <p class="skill__text">CSS3</p>
         </div>
 
-        <div class="skill">
-          <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="tech-skills__skill skill">
+          <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="skill__svg">
             <path d="M0 0.5V63.5H63V0.5H0ZM34.2844 49.6344C34.2844 55.7656 30.6844 58.5641 25.4391 58.5641C20.7 58.5641 17.9578 56.1172 16.5516 53.15L21.375 50.2391C22.3031 51.8844 23.1469 53.2766 25.1859 53.2766C27.1266 53.2766 28.3641 52.5172 28.3641 49.55V29.4266H34.2844V49.6344ZM48.2906 58.5641C42.7922 58.5641 39.2344 55.9484 37.5047 52.5172L42.3281 49.7328C43.5938 51.8 45.2531 53.3328 48.1641 53.3328C50.6109 53.3328 52.1859 52.1094 52.1859 50.4078C52.1859 48.3828 50.5828 47.6656 47.8687 46.4703L46.3922 45.8375C42.1172 44.0234 39.2906 41.7313 39.2906 36.9078C39.2906 32.4641 42.6797 29.0891 47.9531 29.0891C51.7219 29.0891 54.4219 30.3969 56.3625 33.8281L51.75 36.7812C50.7375 34.9672 49.6406 34.25 47.9391 34.25C46.2094 34.25 45.1125 35.3469 45.1125 36.7812C45.1125 38.5531 46.2094 39.2703 48.7547 40.3813L50.2313 41.0141C55.2656 43.1656 58.0922 45.3734 58.0922 50.3234C58.0922 55.6391 53.9016 58.5641 48.2906 58.5641Z" fill="#A3E1DE"/>
           </svg>
-          <p>JavaScript</p>
+          <p class="skill__text">JavaScript</p>
         </div>
 
-        <div class="skill">
-          <svg width="51" height="59" viewBox="0 0 51 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="tech-skills__skill skill">
+          <svg width="51" height="59" viewBox="0 0 51 59" fill="none" xmlns="http://www.w3.org/2000/svg" class="skill__svg">
             <path d="M25.8579 35.1531C24.8508 35.6159 23.7474 36.2189 21.5385 37.4311C20.701 37.9022 19.8258 38.3733 19.0114 38.8172C18.9548 38.7607 18.8962 38.6895 18.8397 38.6309C14.47 33.9618 6.38815 30.6641 6.73153 24.3934C6.85924 22.1091 7.6444 16.1126 22.2525 8.83052C34.2748 2.90521 43.8411 4.54671 45.4931 8.18774C47.8674 13.3781 40.3655 23.0366 27.9496 24.4373C26.5754 24.7161 25.1562 24.6824 23.7968 24.3388C22.4374 23.9953 21.1726 23.3506 20.0959 22.4525C19.4385 21.7385 19.3401 21.6966 19.0972 21.839C18.6973 22.0484 18.9548 22.6953 19.0972 23.0659C19.5708 23.9234 20.2115 24.6772 20.9815 25.2828C21.7514 25.8885 22.635 26.3335 23.5799 26.5918C28.4659 27.6479 33.5602 27.1433 38.1441 25.1492C45.669 22.2368 51.5441 14.1403 49.823 7.35233C48.0956 0.470175 36.6721 -1.79945 25.8642 2.04049C19.0957 4.32141 12.8422 7.91201 7.46015 12.6076C1.50553 18.177 0.56334 23.0178 0.94859 25.0445C2.33465 32.2407 12.2548 36.9245 16.233 40.3938C16.0236 40.509 15.8477 40.6032 15.6907 40.6932C13.7058 41.6794 6.139 45.6345 4.25253 49.8178C2.11062 54.558 4.5959 57.9562 6.2374 58.4126C8.71114 59.0052 11.3082 58.8104 13.6658 57.8554C16.0235 56.9005 18.0241 55.2331 19.3882 53.0861C20.5467 51.3057 21.258 49.2719 21.4618 47.1577C21.6655 45.0434 21.3557 42.9112 20.5587 40.9424C21.0289 40.5673 21.5305 40.2331 22.0578 39.9436C23.0711 39.3448 24.0364 38.7544 24.8927 38.298C27.8248 36.9246 31.0245 36.2174 34.2622 36.2272C41.0586 37.0271 42.4006 41.2669 42.1431 43.0529C42.0226 43.6865 41.7678 44.287 41.3958 44.8139C41.0239 45.3409 40.5433 45.782 39.9866 46.1076C39.5155 46.4071 39.3584 46.5076 39.4003 46.7211C39.4568 47.0352 39.6851 47.0205 40.085 46.964C41.1061 46.6413 42.0057 46.0172 42.6656 45.1738C43.3255 44.3304 43.7149 43.3071 43.7825 42.2384C43.9919 38.0509 39.9991 33.4572 32.9306 33.4991C30.8141 33.5027 28.7187 33.9202 26.7624 34.7281C26.4484 34.8579 26.1434 34.9975 25.8475 35.1469L25.8579 35.1531ZM15.7556 51.5661C13.4985 54.022 10.3579 54.9496 9.00115 54.1644C7.53553 53.3269 8.1155 49.6942 10.8855 47.0959C12.5261 45.6177 14.2993 44.2938 16.1827 43.1408C16.5114 42.9314 16.9972 42.6551 17.5813 42.3033L17.7384 42.2175L18.0817 42.0081C18.5758 43.6645 18.6207 45.4224 18.212 47.1018C17.8033 48.7813 16.9555 50.3219 15.7556 51.5661Z" fill="#A3E1DE"/>
           </svg>
-          <p>SCSS</p>
+          <p class="skill__text">SCSS</p>
         </div>
 
         <!-- 
-        <div class="skill">
-          <img src="" alt="" style="width: 50px; height: 50px;">
-          <p>Skill</p>
+        <div class="tech-skills__skill skill">
+          <svg ... class="skill_svg">
+          <p class="skill__text">Skill</p>
         </div> 
         -->
       </div>
@@ -93,63 +93,63 @@
 
     <!-- Projects -->
     <section id="projects">
-      <h4 class="section-title">Projects</h4>
-      <div class="card-holder">
-        <div class="project-card">
-          <img src="./images/Screenshot 2022-08-09 165641.jpg" alt="" style="width: 320px; height:240px;">
-          <p class="subtitle">Python</p>
-          <h5>Crime in London data visualisation tool</h5>
-          <p>Master's project to answer the question: 'Are public transit stations really crime attractors in metropolitan cities?'. A data visualisation tool taking London crime data and counting crime events around rail stations and other areas.</p>
-          <a href="#" class="project-links">Code &lt;/&gt;</a>
-          <a href="#" class="project-links">Preview &#128065</a>
+      <h4 class="projects__title--underline section-title">Projects</h4>
+      <div class="projects__card-holder card-holder">
+        <div class="projects__card card">
+          <img src="./images/Screenshot 2022-08-09 165641.jpg" alt="" style="width: 320px; height:240px;" class="card__image">
+          <p class="card__category">Python</p>
+          <h5 class="card__title">Crime in London data visualisation tool</h5>
+          <p class="card__body">Master's project to answer the question: 'Are public transit stations really crime attractors in metropolitan cities?'. A data visualisation tool taking London crime data and counting crime events around rail stations and other areas.</p>
+          <a href="#" class="card__links">Code &lt;/&gt;</a>
+          <a href="#" class="card__links">Preview &#128065</a>
         </div>
 
         
 
         <!-- 
-        <div class="project-card">
-          <img src="" alt="" style="width: 320px; height:240px;">
-          <p class="subtitle">Project programming language</p>
-          <h5>Project name</h5>
-          <p>Project description</p>
-          <a href="#" class="project-links">Code &lt;/&gt;</a>
-          <a href="#" class="project-links">Preview &#128065</a>
+        <div class="projects__card card">
+          <img src="" alt="" style="width: 320px; height:240px;" class="card__image">
+          <p class="card__category">Project programming language</p>
+          <h5 class="card__title">Project name</h5>
+          <p class="card__body">Project description</p>
+          <a href="#" class="card__links">Code &lt;/&gt;</a>
+          <a href="#" class="card__links">Preview &#128065</a>
         </div>
          -->
       </div>
     </section>
 
     <!-- About -->
-    <section id="about">
-      <div>
-        <h4>About</h4>
-        <p>
+    <section id="about" class="about">
+      <div class="about__text-container">
+        <h4 class="about__title">About</h4>
+        <p class="about__body">
           I'm Gar-Yin Lam a developer based in London, UK. 
           I studied Computer Science in university at King's College London. 
           I graduated in 2022 with a master's degree and attained first class honours.
           Currently training at _nology to develop my skills as a full stack developer and how best to work in a team.
         </p>
       </div>
-      <img src="./images/186583_xEdIhbBm.png" alt="" style="height: 250px; width: 250px;" class="web">
-      <img src="./images/download20220703154308.png" alt="" style="width: 300px; height: 400px;" class="mobile">
+      <img src="./images/186583_xEdIhbBm.png" alt="" style="height: 250px; width: 250px;" class="about__image--web">
+      <img src="./images/download20220703154308.png" alt="" style="width: 300px; height: 400px;" class="about__image--mobile">
     </section>
   </main>
 
-  <footer id="links">
-    <address>
-      <a href="mailto:garyin.lam@gmail.com" class="email">garyin.lam@gmail.com</a>
+  <footer id="links" class="footer">
+    <address class="footer__address">
+      <a href="mailto:garyin.lam@gmail.com" class="footer__email">garyin.lam@gmail.com</a>
     </address>
-    <p>All Rights Reserved. 2022.</p>
-    <div class="links">
-      <a href="#" class="icon">
+    <p class="footer__rights">All Rights Reserved. 2022.</p>
+    <div class="footer__links">
+      <a href="#" class="footer__icon icon">
         CV
       </a>
-      <a href="https://github.com/garyinlam" class="icon">
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <a href="https://github.com/garyinlam" class="footer__icon icon">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon__svg">
           <path d="M10.5 0.259934C4.69941 0.259934 0 4.96328 0 10.7599C0 15.4016 3.00825 19.3358 7.17741 20.7238C7.70438 20.8229 7.89469 20.498 7.89469 20.2172C7.89469 19.9678 7.88878 19.3082 7.88484 18.4328C4.96256 19.0654 4.347 17.0212 4.347 17.0212C3.86859 15.8111 3.17822 15.4862 3.17822 15.4862C2.22797 14.8372 3.25369 14.851 3.25369 14.851C4.30631 14.9225 4.86019 15.9305 4.86019 15.9305C5.79666 17.537 7.31719 17.0724 7.91897 16.802C8.01084 16.1254 8.2845 15.6602 8.58244 15.4009C6.25144 15.1378 3.80034 14.2354 3.80034 10.212C3.80034 9.06287 4.20722 8.12706 4.87987 7.39206C4.76372 7.1289 4.40803 6.05921 4.97241 4.61284C4.97241 4.61284 5.85113 4.33262 7.85991 5.68975C8.7156 5.45702 9.59814 5.33765 10.4849 5.33471C11.3774 5.34062 12.2692 5.45743 13.1099 5.68975C15.1069 4.33262 15.9849 4.61284 15.9849 4.61284C16.5487 6.05921 16.193 7.12825 16.0906 7.39206C16.7567 8.12706 17.1636 9.06353 17.1636 10.212C17.1636 14.2446 14.7092 15.1338 12.3756 15.3904C12.7404 15.7048 13.0823 16.3512 13.0823 17.3323C13.0823 18.7367 13.0692 19.868 13.0692 20.2099C13.0692 20.4829 13.253 20.8111 13.7937 20.7054C17.9937 19.3319 20.9987 15.3944 20.9987 10.7593C20.9987 4.96262 16.2993 0.259277 10.4987 0.259277L10.5 0.259934Z" fill="#272643"/>
         </svg>
       </a>
-      <a href="https://www.linkedin.com/in/gar-yin-lam-12b996180/" class="icon">
+      <a href="https://www.linkedin.com/in/gar-yin-lam-12b996180/" class="footer__icon icon">
         in
       </a>
     </div>

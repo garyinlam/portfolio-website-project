@@ -1,0 +1,23 @@
+@use "./variables" as v;
+.footer {
+  display: flex;
+  background-color: v.$colour-tertiary;
+  justify-content: space-between;
+  &__email{
+      background-color: v.$colour-tertiary;
+      color: v.$colour-primary;
+  }
+  align-items: center;
+  padding: 50px;
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.footer > * {
+  background-color: v.$colour-tertiary;
+  color: v.$colour-primary;
+}

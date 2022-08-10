@@ -1,0 +1,42 @@
+@use "./variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  color: v.$colour-tertiary;
+  background-color: v.$colour-primary;
+  font-family: v.$font-body;
+}
+
+a:link,
+a:visited{
+  text-decoration: none;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  section > *{
+    margin: 5px;
+  }
+}
+
+main > * {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+img {
+  object-fit: cover;
+}
+
+
+[class$="--mobile"],
+[class*="--mobile "] {
+  display: none;
+}
