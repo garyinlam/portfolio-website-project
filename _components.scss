@@ -25,7 +25,8 @@
 
 [class$="--underline"],
 [class*="--underline "] {
-  text-decoration: underline v.$colour-secondary solid 25%;
+  text-decoration: underline v.$colour-secondary solid 40%;
+  text-underline-offset: 1px;
 }
 
 .section-title {

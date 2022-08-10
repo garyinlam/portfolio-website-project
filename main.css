@@ -64,7 +64,8 @@ img {
 
 [class$="--underline"],
 [class*="--underline "] {
-  text-decoration: underline #A1CEFF solid 25%;
+  text-decoration: underline #A1CEFF solid 40%;
+  text-underline-offset: 1px;
 }
 
 .section-title {
@@ -126,6 +127,9 @@ img {
 }
 .header .splash__image {
   margin: 20px;
+}
+.header .splash__link--button {
+  margin-top: 20px;
 }
 
 .tech-skills__skills-container {
