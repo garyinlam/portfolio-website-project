@@ -18,43 +18,44 @@ a:visited{
 
 }
 
-header {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  nav {
+  .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 120px;
-    ul {
+    &__link-list{
       list-style: none;
       display: flex;
       flex-direction: row;
-      li {
-        padding: 10px;
-      }
+      margin-right: 20px;
+    }
+    &__link {
+      padding: 10px;
     }
   }
 
-  section {
+  .splash {
     display: flex;
     align-items: center;
-    div {
+    &__text-container {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       width: 300px;
-      h2{
-        font-size: 25px;
-        opacity: 75%;
-      }
-      h3 {
-        font-size: 35px;
-      }
     }
-    img {
+    &__title{
+      font-size: 25px;
+      opacity: 75%;
+    }
+    &__subtitle{
+      font-size: 35px;
+    }
+    &__image{
       margin: 20px;
     }
   }
@@ -67,7 +68,8 @@ header {
   font-size: 40px;
 }
 
-.button {
+[class$="--button"],
+[class*="--button "] {
   background-color: $colour-tertiary;
   color: $colour-primary;
   padding: 8px;
@@ -82,7 +84,8 @@ header {
   }
 }
 
-.underline {
+[class$="--underline"],
+[class*="--underline "] {
   text-decoration: underline $colour-secondary solid 25%;
 }
 
@@ -104,20 +107,20 @@ main > * {
 }
 
 .section-title {
-  @extend .underline;
   font-size: 20px;
   margin: 70px 0 20px 0;
 }
 
-.images {
-  display: flex;
-  justify-content: space-evenly;
+.tech-skills {
+  &__skills-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
-
 
 .skill{
   margin: 10px;
-  svg {
+  &__svg {
     width: auto; 
     height: 75px;
     margin: 5px;
@@ -125,7 +128,7 @@ main > * {
       fill: $colour-secondary;
     }
   }
-  p {
+  &__text {
     margin:15px;
   }
 }
@@ -138,29 +141,30 @@ main > * {
   justify-content: space-around;
 }
 
-.project-card {
+.card {
   text-align: left;
   padding: 0 10px 0 10px;
   max-width: 320px;
-  h5 {
+  &__title {
     font-size: 18px;
   }
-  p {
+
+  &__category{
+    opacity: 75%;
+    font-size: 15px;
+  }
+
+  &__body {
     opacity: 90%;
+  }
+
+  &__links {
+    font-size: 14px;
+    margin: 5px;
   }
 }
 
-.subtitle {
-  opacity: 75%;
-  font-size: 15px;
-}
-
-.project-links {
-  font-size: 14px;
-  margin: 5px;
-}
-
-#about{
+.about{
   background-color: $colour-secondary;
   width: 100%;
   display: flex;
@@ -168,38 +172,42 @@ main > * {
   align-items: center;
   justify-content: center;
   margin: 0;
-  div > * {
+  &__text-container > * {
     background-color: $colour-secondary;
   }
-  div {
+  &__text-container {
     text-align: left;
     width: 30%;
   }
 
-  img {
+  &__image {
     border-radius: 50%;
   }
 }
 
-#about > *{
+.about > *{
   margin: 50px;
 }
 
-footer {
+.footer {
   display: flex;
   background-color: $colour-tertiary;
   justify-content: space-between;
-  address{
-    a{
+  &__email{
       background-color: $colour-tertiary;
       color: $colour-primary;
-    }
   }
   align-items: center;
   padding: 50px;
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-footer > * {
+.footer > * {
   background-color: $colour-tertiary;
   color: $colour-primary;
 }
@@ -210,7 +218,7 @@ footer > * {
   height: 20px;
   padding: 10px;
   border-radius: 50%;
-  svg path{
+  &__svg path{
     fill:$colour-tertiary;
   }
   font-weight: bold;
@@ -218,45 +226,41 @@ footer > * {
   margin:5px;
 }
 
-.links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 img {
   object-fit: cover;
 }
 
-.mobile{
+[class$="--mobile"],
+[class*="--mobile "] {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
 
-  header {
-    nav {
-      height: 150px;
-      ul {
-        margin-right: 30px;
-        flex-direction: column;
-        .button {
-          display: none;
-        }
-      }
+  
+  .nav-bar {
+    height: 150px;
+    &__link-list {
+      margin-right: 30px;
+      flex-direction: column;
     }
-    section {
-      margin: 100px 10px 100px 10px;
-      div > *{
-        margin: 50px 0 50px 0;
-      }
+    &__link--button {
+      display: none;
+    }
+  }
+  .splash {
+    margin: 100px 10px 100px 10px;
+    div > *{
+      margin: 50px 0 50px 0;
     }
   }
 
-  .images {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
+  .tech-skills {
+    &__skills-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: minmax(100px, auto);
+    }
   }
 
   .card-holder{
@@ -265,31 +269,33 @@ img {
     flex-wrap: wrap;
   }
 
-  #about {
+  .about {
     background-color: $colour-primary;
     flex-direction: column-reverse;
-    div > * {
+    &__text-container > * {
       background-color: $colour-primary;
     }
-    div{
+    &__text-container{
       width: 80%;
     }
-    img {
+    &__image {
       border-radius: 0;
     }
   }
 
-  .web {
+  [class$="--web"],
+  [class*="--web "]  {
     display: none;
   }
 
-  .mobile{
+  [class$="--mobile"],
+  [class*="--mobile "] {
     display: block;
   }
 
-  footer {
+  .footer {
     flex-direction: column-reverse;
-    p {
+    &__rights {
       visibility: hidden;
     }
   }
