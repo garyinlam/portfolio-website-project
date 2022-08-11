@@ -54,6 +54,7 @@ img {
   border-radius: 8px;
   margin: 5px;
   font-weight: bold;
+  letter-spacing: 0.5px;
 }
 [class$="--button"]:hover,
 [class*="--button "]:hover {
