@@ -33,6 +33,8 @@
       flex-direction: column;
       align-items: flex-start;
       width: 320px;
+      background-color: v.$colour-primary;
+      padding: 10px;
     }
     &__title{
       font-size: 25px;

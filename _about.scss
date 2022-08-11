@@ -13,6 +13,7 @@
   &__text-container {
     text-align: left;
     width: 30%;
+    background-color: v.$colour-secondary;
   }
 
   &__image--web {
@@ -25,13 +26,14 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 100px;
-    margin: 0;
+    margin-right: auto;
+    background-color: v.$colour-secondary;
+    max-width: 50%;
   }
 
   &__list {
     text-align: left;
     list-style: circle;
-    width: 50%;
   }
 
   &__item {
