@@ -8,10 +8,7 @@
       &__link-list{
         margin-right: 30px;
         flex-direction: column;
-      }
-
-      &__link-list > * {
-        margin: 5px 0 5px 0;
+        align-items: stretch;
       }
 
       &__link{
@@ -103,5 +100,40 @@
     &__rights {
       visibility: hidden;
     }
+  }
+
+  .menu__button-container {
+    display: flex;
+  }
+  .nav-bar__link-list {
+    position: absolute;
+    top: 0;
+    margin-top: 120px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .nav-bar__link-list li a {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .nav-bar__link-list li a{
+    height: 30px;
+    padding: 5px;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .nav-bar__link-list > li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    color: v.$colour-primary;
+    background-color: v.$colour-tertiary;
   }
 }
