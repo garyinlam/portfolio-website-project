@@ -2,8 +2,11 @@
   margin: 0;
   padding: 0;
   color: #252525;
-  background-color: #f6f8fc;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+html {
+  background-color: #f6f8fc;
 }
 
 a:link,
@@ -65,8 +68,9 @@ img {
 
 [class$="--underline"],
 [class*="--underline "] {
-  text-decoration: underline #A1CEFF solid 40%;
+  text-decoration: underline #A1CEFF solid 30%;
   text-underline-offset: 1px;
+  background-color: #f6f8fc;
 }
 
 .section-title {
@@ -83,6 +87,7 @@ img {
   font-weight: bold;
   font-size: 17px;
   margin: 5px;
+  background-color: #f6f8fc;
 }
 .icon__svg path {
   fill: #252525;
@@ -190,15 +195,10 @@ img {
   margin-top: 100px;
 }
 .about__main {
-  background-color: #A1CEFF;
-  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-.about__text-container > * {
-  background-color: #A1CEFF;
 }
 .about__text-container {
   text-align: left;
@@ -209,25 +209,18 @@ img {
   margin-left: 30px;
 }
 .about__other {
-  background-color: #A1CEFF;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 100px;
-  width: 100%;
   margin: 0;
-}
-.about__other > * {
-  background-color: #A1CEFF;
 }
 .about__list {
   text-align: left;
-  background-color: #A1CEFF;
   list-style: circle;
   width: 50%;
 }
 .about__item {
-  background-color: #A1CEFF;
   margin: 10px 0px 10px 0px;
 }
 
@@ -244,7 +237,6 @@ img {
   padding: 50px;
 }
 .footer__email {
-  background-color: #252525;
   color: #f6f8fc;
 }
 .footer__links {
@@ -254,7 +246,6 @@ img {
 }
 
 .footer > * {
-  background-color: #252525;
   color: #f6f8fc;
 }
 

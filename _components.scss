@@ -26,8 +26,9 @@
 
 [class$="--underline"],
 [class*="--underline "] {
-  text-decoration: underline v.$colour-secondary solid 40%;
+  text-decoration: underline v.$colour-secondary solid 30%;
   text-underline-offset: 1px;
+  background-color: v.$colour-primary;
 }
 
 .section-title {
@@ -47,4 +48,5 @@
   font-weight: bold;
   font-size: 17px;
   margin:5px;
+  background-color: v.$colour-primary;
 }
