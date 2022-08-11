@@ -148,6 +148,7 @@ img {
 .tech-skills__skills-container {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .skill {
