@@ -98,8 +98,10 @@ img {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  background-image: url(./images/background.png);
 }
 .header .nav-bar {
+  background-color: #f6f8fc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -191,6 +193,7 @@ img {
 
 .about {
   background-color: #A1CEFF;
+  background-image: url("./images/background.png");
   margin: 0;
   margin-top: 100px;
 }
@@ -291,6 +294,7 @@ img {
 
   .about {
     background-color: #f6f8fc;
+    background-image: none;
   }
   .about__main {
     flex-direction: column-reverse;

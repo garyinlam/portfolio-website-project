@@ -50,6 +50,7 @@
 
   .about {
     background-color: v.$colour-primary;
+    background-image: none;
     &__main {
       flex-direction: column-reverse;
       background-color: v.$colour-primary;
