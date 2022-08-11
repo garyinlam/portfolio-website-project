@@ -155,14 +155,10 @@ img {
   align-items: center;
   margin-right: 20px;
 }
-
-#menu-toggle {
+.menu__toggle {
   display: none;
 }
-
-.menu__button,
-.menu__button::before,
-.menu__button::after {
+.menu__button, .menu__button::before, .menu__button::after {
   display: block;
   background-color: #252525;
   position: absolute;
@@ -171,27 +167,22 @@ img {
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
 }
-
 .menu__button::before {
   content: "";
   margin-top: -8px;
 }
-
 .menu__button::after {
   content: "";
   margin-top: 8px;
 }
-
-#menu-toggle:checked + .menu__button-container .menu__button::before {
+.menu__toggle:checked + .menu__button-container .menu__button::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
-
-#menu-toggle:checked + .menu__button-container .menu__button {
+.menu__toggle:checked + .menu__button-container .menu__button {
   background: rgba(255, 255, 255, 0);
 }
-
-#menu-toggle:checked + .menu__button-container .menu__button::after {
+.menu__toggle:checked + .menu__button-container .menu__button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
@@ -416,7 +407,7 @@ img {
     align-items: center;
   }
 
-  #menu-toggle ~ .nav-bar__link-list li a {
+  #menu-toggle ~ .nav-bar__link-list .nav-bar__link {
     height: 0;
     margin: 0;
     padding: 0;
@@ -424,7 +415,7 @@ img {
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
 
-  #menu-toggle:checked ~ .nav-bar__link-list li a {
+  #menu-toggle:checked ~ .nav-bar__link-list .nav-bar__link {
     height: 30px;
     padding: 5px;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
