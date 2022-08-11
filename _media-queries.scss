@@ -44,6 +44,10 @@
     flex-wrap: wrap;
   }
 
+  .card {
+    margin-bottom: 10px;
+  }
+
   .about {
     background-color: v.$colour-primary;
     &__main {
@@ -60,6 +64,9 @@
       border-radius: 0;
     }
 
+    &__title {
+      padding: 10px 0 10px 0;
+    }
     &__other {
       background-color: v.$colour-primary;
       width: auto;
@@ -86,6 +93,7 @@
   [class$="--mobile"],
   [class*="--mobile "] {
     display: block;
+    margin-bottom: 30px;
   }
 
   .footer {

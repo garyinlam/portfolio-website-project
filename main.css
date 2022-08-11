@@ -285,6 +285,10 @@ img {
     flex-wrap: wrap;
   }
 
+  .card {
+    margin-bottom: 10px;
+  }
+
   .about {
     background-color: #f6f8fc;
   }
@@ -300,6 +304,9 @@ img {
   }
   .about__image {
     border-radius: 0;
+  }
+  .about__title {
+    padding: 10px 0 10px 0;
   }
   .about__other {
     background-color: #f6f8fc;
@@ -325,6 +332,7 @@ img {
   [class$="--mobile"],
 [class*="--mobile "] {
     display: block;
+    margin-bottom: 30px;
   }
 
   .footer {
