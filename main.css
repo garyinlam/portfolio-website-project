@@ -306,7 +306,7 @@ img {
   .header .nav-bar__link-list {
     margin-right: 30px;
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-end;
   }
   .header .nav-bar__link {
     padding: 0;
@@ -426,7 +426,7 @@ img {
     justify-content: center;
     align-items: center;
     margin: 0;
-    width: 100%;
+    width: 100px;
     color: #f6f8fc;
     background-color: #252525;
   }

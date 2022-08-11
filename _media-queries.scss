@@ -8,7 +8,7 @@
       &__link-list{
         margin-right: 30px;
         flex-direction: column;
-        align-items: stretch;
+        align-items: flex-end;
       }
 
       &__link{
@@ -134,7 +134,7 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    width: 100%;
+    width: 100px;
     color: v.$colour-primary;
     background-color: v.$colour-tertiary;
   }
