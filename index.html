@@ -125,15 +125,15 @@
       <h4 class="projects__title--underline section-title">Projects</h4>
       <div class="projects__card-holder card-holder">
 
-        <div class="projects__card card" id="crime-vis" onclick="showOverlay(this.id)">
-          <img src="./images/Screenshot 2022-08-09 165641.jpg" alt="" class="card__image">
+        <div class="projects__card card" id="crime-vis">
+          <img src="./images/Screenshot 2022-08-09 165641.jpg" alt="" class="card__image" onclick="showOverlay(this)">
           <p class="card__category">Python</p>
           <h5 class="card__title">Crime in London data visualisation tool</h5>
           <p class="card__body">Master's project to answer the question: 'Are public transit stations really crime attractors in metropolitan cities?'. A data visualisation tool taking London crime data and counting crime events around rail stations and other areas.</p>
           <a href="#" class="card__links">Code &lt;/&gt;</a>
-          <a href="./images/Screenshot 2022-08-09 165641.jpg" class="card__links">Preview &#128065</a>
+          <a href="#" class="card__links" onclick="showOverlay(this)">Preview &#128065</a>
 
-          <div class="card__overlay overlay">
+          <div class="card__overlay overlay" id="crime-vis-overlay">
             <div class="overlay__popup">
               <div class="overlay__close" onclick="hideOverlay(this)">&#10006;</div>
               <img src="./images/Screenshot 2022-08-09 165641.jpg" alt="" class="overlay__image">
@@ -146,17 +146,17 @@
 
         </div>
 
-        <div class="projects__card card" id="projectid" onclick="showOverlay(this.id)">
-          <img src="" alt="" class="card__image">
+        <div class="projects__card card" id="projectid">
+          <img src="" alt="" class="card__image" onclick="showOverlay(this)">
           <p class="card__category">Project programming language</p>
           <h5 class="card__title">Project name</h5>
           <p class="card__body">Project description</p>
           <a href="#" class="card__links">Code &lt;/&gt;</a>
-          <a href="#" class="card__links">Preview &#128065</a>
+          <a href="#" class="card__links" onclick="showOverlay(this)">Preview &#128065</a>
 
-          <div class="card__overlay overlay">
+          <div class="card__overlay overlay" id="projectid-overlay">
             <div class="overlay__popup">
-              <div class="overlay__close">&#10006;</div>
+              <div class="overlay__close" onclick="hideOverlay(this)">&#10006;</div>
               <img src="" alt="" class="overlay__image">
               <h6 class="overlay__title">Project name</h6>
               <p class="overlay__catgory">Project programming language</p>
