@@ -364,6 +364,9 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    background-image: none;
+  }
   .header .nav-bar {
     height: 150px;
   }
@@ -436,6 +439,11 @@ img {
   }
   .about__other > * {
     background-color: #f6f8fc;
+  }
+
+  .overlay__popup {
+    width: 90%;
+    left: 5%;
   }
 
   [class$="--web"],

@@ -2,6 +2,7 @@
 @media screen and (max-width: 768px) {
 
   .header{
+    background-image: none;
     .nav-bar {
       height: 150px;
       
@@ -81,6 +82,13 @@
 
     &__other > * {
       background-color: v.$colour-primary;
+    }
+  }
+
+  .overlay {
+    &__popup {
+      width: 90%;
+      left: 5%;
     }
   }
 
