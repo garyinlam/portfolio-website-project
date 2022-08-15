@@ -140,6 +140,8 @@ img {
 }
 .header .splash__image {
   margin: 20px;
+  width: 300px;
+  height: 400px;
 }
 .header .splash__link--button {
   margin-top: 20px;
@@ -220,6 +222,7 @@ img {
   text-align: left;
   padding: 0 10px 0 10px;
   max-width: 320px;
+  cursor: pointer;
 }
 .card__title {
   font-size: 18px;
@@ -234,6 +237,54 @@ img {
 .card__links {
   font-size: 14px;
   margin: 5px;
+}
+.card__image {
+  width: 320px;
+  height: 240px;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  cursor: default;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+.overlay__popup {
+  position: absolute;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px black;
+  background-color: #f6f8fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
+}
+.overlay__close {
+  position: absolute;
+  top: -40px;
+  right: -5px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  color: #f6f8fc;
+  display: inline-block;
+}
+.overlay__title {
+  font-size: 18px;
+}
+.overlay__image {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 30px 10px 30px;
 }
 
 .about {
@@ -257,6 +308,12 @@ img {
 .about__image--web {
   border-radius: 50%;
   margin-left: 30px;
+  height: 250px;
+  width: 250px;
+}
+.about__image--mobile {
+  width: 300px;
+  height: 400px;
 }
 .about__other {
   display: flex;
