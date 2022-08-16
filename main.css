@@ -72,7 +72,7 @@ img {
 
 [class$="--underline"],
 [class*="--underline "] {
-  text-decoration: underline #A1CEFF solid 30%;
+  text-decoration: underline #A1CEFF solid 40%;
   text-underline-offset: 1px;
   background-color: #f6f8fc;
 }
